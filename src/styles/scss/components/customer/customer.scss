@@ -1,0 +1,90 @@
+.customer {
+  &__content {
+    margin-bottom: 174px;
+  }
+
+  &__tittle {
+    padding-top: 104px;
+    font-size: map-get($font-sizes, "xs");
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: map-get($colors, "tittle-color");
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    margin-bottom: 37px;
+    color: map-get($colors, "description");
+    position: relative;
+  }
+
+  p {
+    max-width: 391px;
+    position: relative;
+    left: 50px;
+  }
+
+  .arrow {
+    display: inline-block;
+    border: 3px solid map-get($colors, "description");
+    border-width: 0 3px 3px 0;
+    padding: 3px;
+    margin-right: 18px;
+    border-radius: 3px;
+    transition: 0.3s;
+  }
+
+  .arrow:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    color: map-get($colors, "black");
+  }
+
+  .down {
+    transform: rotate(45deg);
+  }
+
+  .arrow-up {
+    font-size: map-get($font-sizes, "md");
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    text-align: left;
+
+  }
+
+  .up {
+    transform: rotate(-135deg);
+    border-color: map-get($colors, "second-bold-color");
+  }
+
+  &__controls {
+    position: relative;
+    width: 195px;
+    height: 43px;
+    left: 300px;
+    bottom: 75px;
+  }
+
+  &-controls__btn {
+    background-color: map-get($colors, "second-bg-color-btn");
+    color: map-get($colors, "color-btn");
+    position: relative;
+    bottom: 42px;
+    left: 155px;
+  }
+
+  &-border {
+    border-bottom: 1px solid map-get($colors, "bordered-color");
+    padding-bottom: 17px;
+  }
+
+  h3{
+    font-family: $main-font-family;
+    font-weight: 500;
+    font-size: map-get($font-sizes, "lg");
+    color: map-get($colors, "headers-color");
+  }
+}

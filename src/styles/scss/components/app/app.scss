@@ -1,0 +1,59 @@
+.app {
+  padding: 66px 0;
+  position: relative;
+
+  &:before, &:after{
+    content:'';
+    position: absolute;
+    top: 0;
+    display: block;
+    height: 100%;
+    width: 50%;
+    z-index: -1;
+  }
+
+  &:before{
+    background-color: map-get($colors, "accent-color");
+    left: 0;
+  }
+
+  &:after{
+    background-color: map-get($colors, "app-right-bg");
+    right: 0;
+  }
+
+  &__content {
+    @include flex-gap(180px);
+    //justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__productivity, &__users {
+    width: calc(50% - (180px / 2));
+  }
+
+  &__productivity {
+    text-align: right;
+  }
+
+  &__productivity &__count,  &__productivity &__text{
+    color: map-get($colors, "white-color");
+  }
+
+  &__users &__count,  &__users &__text{
+    color: map-get($colors, "accent-color");
+  }
+
+  &__count, &__text{
+    color: map-get($colors, "white-color");
+    font-family: $main-font-family;
+  }
+
+  &__count {
+    font-size: map-get($font-sizes, "xxl");
+  }
+
+  &__text {
+    font-size: map-get($font-sizes, "lg");
+  }
+}

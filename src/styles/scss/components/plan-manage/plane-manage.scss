@@ -1,0 +1,46 @@
+.plan-manage {
+  background-color: map-get($colors, "banner-bg");
+  padding-top: 170px;
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 27px;
+    text-align: left;
+    margin: 0 auto;
+  }
+
+  &__tittle {
+    max-width: 380px;
+    position: relative;
+    right: 210px;
+  }
+
+  &__action{
+    position: relative;
+    right: 210px;
+  }
+
+  .btn-secondary {
+    position: relative;
+    right: 5px;
+    border-radius: 0;
+  }
+
+  .btn-icon {
+    border-radius: 0;
+  }
+
+  &__img{
+    position: relative;
+    left: 200px;
+    bottom: 325px;
+  }
+
+  h3{
+    font-size: map-get($colors, "xl");
+    font-weight: 400;
+    color: map-get($colors, "headers-color");
+    margin-bottom: 27px;
+  }
+}

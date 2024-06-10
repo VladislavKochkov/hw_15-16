@@ -1,0 +1,67 @@
+.footer {
+  $logo-dimensions: 26px;
+  max-height: 80px;
+  padding: 93px 0;
+
+  &__content {
+    @extend %flex-between;
+    align-items: center;
+  }
+
+  &__start {
+    @extend %flex-between;
+    @include flex-gap(73px, false);
+    align-items: center;
+  }
+
+  &__logo a {
+    background-color: map-get($colors, 'accent-color');
+    width: $logo-dimensions;
+    height: $logo-dimensions;
+    border-radius: 50%;
+    transition: .3s box-shadow;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      box-shadow: 0 0 11px -3px map-get($colors, 'black');
+    }
+  }
+
+  &__main-menu ul {
+    @extend %list-unstyled;
+    @include flex-gap(42px);
+
+    a {
+      @extend %base-link;
+    }
+  }
+
+  &__end {
+    @extend %flex-between;
+    @include flex-gap(15px, false);
+    align-items: center;
+  }
+
+  &__socials ul {
+    @extend %list-unstyled;
+    @include flex-gap(25px);
+
+    a {
+      @extend %base-link;
+      font-size: map-get($font-sizes, 'lg');
+    }
+  }
+
+  p {
+    position: relative;
+    right: 370px;
+    color: map-get($colors, "footer-text");
+    min-width: 210px;
+    font-family: $main-font-family;
+    text-align: center;
+    font-size: map-get($font-sizes, "footer-text");
+    line-height: map-get($font-sizes, "md");
+  }
+
+}

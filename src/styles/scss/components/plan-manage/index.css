@@ -1,0 +1,10 @@
+.plan-manage {
+  padding: 170px 0;
+}
+.plan-manage__content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 27px;
+}
+
+/*# sourceMappingURL=index.css.map */

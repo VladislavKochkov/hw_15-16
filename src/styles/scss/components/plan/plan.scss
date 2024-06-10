@@ -1,0 +1,47 @@
+.plan {
+  background-color: map-get($colors, "accent-color");
+  padding: 91px 0;
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 28px;
+  }
+
+  h6, h2, p {
+    color: map-get($colors, "white-color");
+  }
+
+  h6,p{
+    font-family: $secondary-font-family;
+  }
+
+
+  h2 {
+    font-family: $main-font-family;
+    font-size: map-get($font-sizes, "xxl");
+    line-height: 60px;
+    font-weight: 300;
+    margin-bottom: 28px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: map-get($font-sizes, "md");
+    text-align: center;
+    line-height: 28px;
+  }
+
+  &__action{
+    text-align: center;
+  }
+
+  .btn-icon{
+    position: relative;
+    left: 10px;
+    background-color: map-get($colors, "btn-icon-color");
+    color: map-get($colors, "btn-text-color")
+  }
+}
